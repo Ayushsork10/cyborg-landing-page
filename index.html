@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXUS-7 | Cyborg Evolution</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Scanline overlay -->
+  <div class="scanlines"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ======= NAVIGATION ======= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-bracket">[</span>
+        <span class="logo-text">NEXUS<span class="logo-accent">-7</span></span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link">HOME</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#features" class="nav-link">FEATURES</a></li>
+        <li><a href="#specs" class="nav-link">SPECS</a></li>
+        <li><a href="#cta" class="nav-link">CONTACT</a></li>
+      </ul>
+      <div class="nav-status">
+        <span class="status-dot"></span>
+        <span class="status-text">ONLINE</span>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ======= HERO SECTION ======= -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="hex-grid"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-line">// NEXT GENERATION AUGMENTATION</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="glitch-text" data-text="EVOLVE">EVOLVE</span>
+        <br />
+        <span class="hero-subtitle-word">BEYOND</span>
+        <br />
+        <span class="hero-accent-word glitch-text" data-text="HUMAN">HUMAN</span>
+      </h1>
+      <p class="hero-description">
+        Fusing biological intelligence with machine precision. <br />
+        The NEXUS-7 augmentation system redefines what it means to be human.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#features" class="btn btn-primary">
+          <span class="btn-text">INITIALIZE</span>
+          <span class="btn-glow"></span>
+        </a>
+        <a href="#about" class="btn btn-secondary">
+          <span class="btn-text">LEARN MORE</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="847">0</span><span class="stat-unit">%</span>
+          <span class="stat-label">EFFICIENCY BOOST</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="12">0</span><span class="stat-unit">ms</span>
+          <span class="stat-label">NEURAL LATENCY</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-num" data-target="99">0</span><span class="stat-unit">.9%</span>
+          <span class="stat-label">UPTIME</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="cyborg-figure">
+        <div class="figure-ring ring-outer"></div>
+        <div class="figure-ring ring-mid"></div>
+        <div class="figure-ring ring-inner"></div>
+        <div class="figure-core">
+          <div class="core-pulse"></div>
+          <div class="core-icon">⬡</div>
+        </div>
+        <div class="circuit-lines">
+          <div class="c-line l1"></div>
+          <div class="c-line l2"></div>
+          <div class="c-line l3"></div>
+          <div class="c-line l4"></div>
+        </div>
+        <div class="data-nodes">
+          <div class="d-node n1"><span>CPU</span></div>
+          <div class="d-node n2"><span>MEM</span></div>
+          <div class="d-node n3"><span>NET</span></div>
+          <div class="d-node n4"><span>SYS</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <span class="scroll-text">SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ======= ABOUT SECTION ======= -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// 001</span>
+        <h2 class="section-title">WHAT IS <span class="accent">NEXUS-7</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p class="about-lead">
+            NEXUS-7 is the world's most advanced human augmentation platform — a seamless marriage of organic tissue and quantum-grade computing.
+          </p>
+          <p class="about-body">
+            Engineered over a decade of research, our neural interface technology integrates directly with your central nervous system, delivering real-time data processing, enhanced physical capabilities, and cognitive expansion that pushes the boundaries of human potential.
+          </p>
+          <div class="about-badges">
+            <span class="badge">ISO 9001 CERTIFIED</span>
+            <span class="badge">QUANTUM ENCRYPTED</span>
+            <span class="badge">BIO-COMPATIBLE</span>
+          </div>
+        </div>
+        <div class="about-visual">
+          <div class="terminal-box">
+            <div class="terminal-header">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">nexus_init.exe</span>
+            </div>
+            <div class="terminal-body" id="terminal-output">
+              <div class="t-line"><span class="t-prompt">&gt;</span> <span class="t-cmd">Initializing NEXUS-7...</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FEATURES SECTION ======= -->
+  <section class="features" id="features">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// 002</span>
+        <h2 class="section-title">CORE <span class="accent">MODULES</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="features-grid">
+
+        <div class="feature-card" data-index="0">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <polygon points="30,5 55,20 55,40 30,55 5,40 5,20" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <polygon points="30,15 45,22.5 45,37.5 30,45 15,37.5 15,22.5" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+              <circle cx="30" cy="30" r="5" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3 class="card-title">NEURAL LINK</h3>
+          <p class="card-desc">Direct brain-machine interface enabling thought-speed commands and real-time sensory augmentation.</p>
+          <div class="card-stat">
+            <span class="c-stat-label">BANDWIDTH</span>
+            <div class="c-stat-bar"><div class="c-stat-fill" style="--fill: 94%"></div></div>
+            <span class="c-stat-val">94%</span>
+          </div>
+        </div>
+
+        <div class="feature-card" data-index="1">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="10" width="40" height="40" rx="4" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <rect x="18" y="18" width="24" height="24" rx="2" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+              <circle cx="30" cy="30" r="4" fill="currentColor"/>
+              <line x1="30" y1="10" x2="30" y2="18" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="30" y1="42" x2="30" y2="50" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="10" y1="30" x2="18" y2="30" stroke="currentColor" stroke-width="1.5"/>
+              <line x1="42" y1="30" x2="50" y2="30" stroke="currentColor" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <h3 class="card-title">QUANTUM CORE</h3>
+          <p class="card-desc">Embedded quantum processor delivers 10^18 operations per second for unparalleled cognitive acceleration.</p>
+          <div class="card-stat">
+            <span class="c-stat-label">PROCESSING</span>
+            <div class="c-stat-bar"><div class="c-stat-fill" style="--fill: 98%"></div></div>
+            <span class="c-stat-val">98%</span>
+          </div>
+        </div>
+
+        <div class="feature-card" data-index="2">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30 5 L50 15 L50 45 L30 55 L10 45 L10 15 Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M30 15 L42 22 L42 38 L30 45 L18 38 L18 22 Z" stroke="currentColor" stroke-width="1" fill="none" opacity="0.4"/>
+              <path d="M22 30 Q30 20 38 30 Q30 40 22 30Z" fill="currentColor" opacity="0.8"/>
+            </svg>
+          </div>
+          <h3 class="card-title">EXO-SHIELD</h3>
+          <p class="card-desc">Sub-dermal nano-armor provides real-time threat analysis and adaptive protection against physical and digital attacks.</p>
+          <div class="card-stat">
+            <span class="c-stat-label">PROTECTION</span>
+            <div class="c-stat-bar"><div class="c-stat-fill" style="--fill: 87%"></div></div>
+            <span class="c-stat-val">87%</span>
+          </div>
+        </div>
+
+        <div class="feature-card" data-index="3">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="30" r="20" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <circle cx="30" cy="30" r="12" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+              <circle cx="30" cy="30" r="5" fill="currentColor"/>
+              <line x1="30" y1="10" x2="30" y2="18" stroke="currentColor" stroke-width="2"/>
+              <line x1="44.1" y1="15.9" x2="38.5" y2="21.5" stroke="currentColor" stroke-width="2"/>
+              <line x1="50" y1="30" x2="42" y2="30" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3 class="card-title">OPTIC ARRAY</h3>
+          <p class="card-desc">360° enhanced vision with thermal imaging, telescopic zoom, and AR overlay for real-time environmental mapping.</p>
+          <div class="card-stat">
+            <span class="c-stat-label">RESOLUTION</span>
+            <div class="c-stat-bar"><div class="c-stat-fill" style="--fill: 100%"></div></div>
+            <span class="c-stat-val">100%</span>
+          </div>
+        </div>
+
+        <div class="feature-card" data-index="4">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 30 Q15 15 30 15 Q45 15 45 30 Q45 45 30 45 Q15 45 15 30Z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M20 30 Q20 20 30 20 Q40 20 40 30" stroke="currentColor" stroke-width="1" fill="none" opacity="0.5"/>
+              <line x1="10" y1="30" x2="50" y2="30" stroke="currentColor" stroke-width="0.5" stroke-dasharray="3 3" opacity="0.4"/>
+              <circle cx="30" cy="22" r="3" fill="currentColor"/>
+              <circle cx="38" cy="30" r="3" fill="currentColor" opacity="0.6"/>
+            </svg>
+          </div>
+          <h3 class="card-title">BIO-SYNC</h3>
+          <p class="card-desc">Continuous biological monitoring with predictive health management and instant cellular regeneration protocols.</p>
+          <div class="card-stat">
+            <span class="c-stat-label">SYNC RATE</span>
+            <div class="c-stat-bar"><div class="c-stat-fill" style="--fill: 91%"></div></div>
+            <span class="c-stat-val">91%</span>
+          </div>
+        </div>
+
+        <div class="feature-card" data-index="5">
+          <div class="card-glow"></div>
+          <div class="card-icon">
+            <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="20" width="44" height="20" rx="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <rect x="52" y="25" width="4" height="10" rx="2" stroke="currentColor" stroke-width="1" fill="currentColor" opacity="0.6"/>
+              <rect x="12" y="24" width="28" height="12" rx="1" fill="currentColor" opacity="0.3"/>
+              <rect x="12" y="24" width="28" height="12" rx="1" stroke="currentColor" stroke-width="0.5"/>
+            </svg>
+          </div>
+          <h3 class="card-title">POWER CELL</h3>
+          <p class="card-desc">Zero-point energy harvesting from biological motion ensures perpetual operation — never power down again.</p>
+          <div class="card-stat">
+            <span class="c-stat-label">CAPACITY</span>
+            <div class="c-stat-bar"><div class="c-stat-fill" style="--fill: 76%"></div></div>
+            <span class="c-stat-val">∞</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= SPECS SECTION ======= -->
+  <section class="specs" id="specs">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// 003</span>
+        <h2 class="section-title">TECHNICAL <span class="accent">SPECS</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="specs-layout">
+        <div class="specs-table">
+          <div class="spec-row" data-delay="0">
+            <span class="spec-key">PROCESSOR</span>
+            <span class="spec-dots"></span>
+            <span class="spec-val">Quantum Neural Array v7.4</span>
+          </div>
+          <div class="spec-row" data-delay="1">
+            <span class="spec-key">MEMORY</span>
+            <span class="spec-dots"></span>
+            <span class="spec-val">512 PB Synaptic Storage</span>
+          </div>
+          <div class="spec-row" data-delay="2">
+            <span class="spec-key">INTERFACE</span>
+            <span class="spec-dots"></span>
+            <span class="spec-val">Direct Neural I/O @ 1 Tbps</span>
+          </div>
+          <div class="spec-row" data-delay="3">
+            <span class="spec-key">POWER</span>
+            <span class="spec-dots"></span>
+            <span class="spec-val">Zero-Point Kinetic Harvest</span>
+          </div>
+          <div class="spec-row" data-delay="4">
+            <span class="spec-key">LATENCY</span>
+            <span class="spec-dots"></span>
+            <span class="spec-val">0.012 ms response time</span>
+          </div>
+          <div class="spec-row" data-delay="5">
+            <span class="spec-key">SECURITY</span>
+            <span class="spec-dots"></span>
+            <span class="spec-val">Quantum-Encrypted 4096-bit</span>
+          </div>
+          <div class="spec-row" data-delay="6">
+            <span class="spec-key">OS</span>
+            <span class="spec-dots"></span>
+            <span class="spec-val">NEXUS OS 7.0 (real-time)</span>
+          </div>
+          <div class="spec-row" data-delay="7">
+            <span class="spec-key">MATERIAL</span>
+            <span class="spec-dots"></span>
+            <span class="spec-val">Graphene-Titanium Composite</span>
+          </div>
+        </div>
+        <div class="specs-radar">
+          <canvas id="radar-chart" width="320" height="320"></canvas>
+          <div class="radar-labels">
+            <span class="r-label" style="top:5%;left:50%;transform:translateX(-50%)">SPEED</span>
+            <span class="r-label" style="top:28%;right:3%">POWER</span>
+            <span class="r-label" style="top:72%;right:8%">DEFENSE</span>
+            <span class="r-label" style="top:88%;left:50%;transform:translateX(-50%)">INTEL</span>
+            <span class="r-label" style="top:72%;left:3%">STEALTH</span>
+            <span class="r-label" style="top:28%;left:3%">AGILITY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= TESTIMONIALS ======= -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">// 004</span>
+        <h2 class="section-title">FIELD <span class="accent">REPORTS</span></h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="testimonials-track-wrapper">
+        <div class="testimonials-track" id="testimonials-track">
+          <div class="testimonial-card">
+            <div class="t-quote">"</div>
+            <p class="t-text">The neural link transformed my reaction time from human to superhuman. I process information faster than I can consciously think.</p>
+            <div class="t-author">
+              <div class="t-avatar">CX</div>
+              <div class="t-info">
+                <span class="t-name">CIPHER-X</span>
+                <span class="t-role">Field Operative, Unit 7</span>
+              </div>
+              <div class="t-rating">★★★★★</div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">"</div>
+            <p class="t-text">After the Quantum Core installation, I solved equations that would take a supercomputer years. My mind operates on a different plane now.</p>
+            <div class="t-author">
+              <div class="t-avatar">DR</div>
+              <div class="t-info">
+                <span class="t-name">DR. REINHOLT</span>
+                <span class="t-role">Quantum Physicist</span>
+              </div>
+              <div class="t-rating">★★★★★</div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">"</div>
+            <p class="t-text">The Exo-Shield took three direct hits in the field — I walked away without a scratch. This technology is simply unreal.</p>
+            <div class="t-author">
+              <div class="t-avatar">GH</div>
+              <div class="t-info">
+                <span class="t-name">GHOST-HAWK</span>
+                <span class="t-role">Tactical Specialist</span>
+              </div>
+              <div class="t-rating">★★★★★</div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="t-quote">"</div>
+            <p class="t-text">Bio-Sync detected a critical anomaly 48 hours before symptoms appeared. The predictive health system literally saved my life.</p>
+            <div class="t-author">
+              <div class="t-avatar">AV</div>
+              <div class="t-info">
+                <span class="t-name">AGENT VOSS</span>
+                <span class="t-role">Deep Cover Operative</span>
+              </div>
+              <div class="t-rating">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="t-controls">
+        <button class="t-btn" id="t-prev">&#8592;</button>
+        <div class="t-dots" id="t-dots"></div>
+        <button class="t-btn" id="t-next">&#8594;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= CTA SECTION ======= -->
+  <section class="cta-section" id="cta">
+    <div class="cta-bg">
+      <div class="cta-grid"></div>
+    </div>
+    <div class="section-container">
+      <div class="cta-content">
+        <span class="cta-tag">// READY TO EVOLVE?</span>
+        <h2 class="cta-title">BEGIN YOUR <span class="accent">AUGMENTATION</span></h2>
+        <p class="cta-desc">Join 12,000+ enhanced operatives already operating at peak potential. Limited installation slots available for Q1 2027.</p>
+        <form class="cta-form" id="cta-form" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="name">DESIGNATION</label>
+              <input type="text" id="name" class="form-input" placeholder="Enter your name" autocomplete="off" />
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">COMM CHANNEL</label>
+              <input type="email" id="email" class="form-input" placeholder="your@email.com" autocomplete="off" />
+            </div>
+          </div>
+          <div class="form-group full">
+            <label class="form-label" for="module">SELECT MODULE</label>
+            <select id="module" class="form-input form-select">
+              <option value="">-- CHOOSE AUGMENTATION --</option>
+              <option value="neural">Neural Link</option>
+              <option value="quantum">Quantum Core</option>
+              <option value="exo">Exo-Shield</option>
+              <option value="optic">Optic Array</option>
+              <option value="bio">Bio-Sync</option>
+              <option value="full">Full NEXUS-7 Suite</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-large">
+            <span class="btn-text">SUBMIT REQUEST</span>
+            <span class="btn-glow"></span>
+          </button>
+          <div class="form-message" id="form-message"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-bracket">[</span>
+          <span class="logo-text">NEXUS<span class="logo-accent">-7</span></span>
+          <span class="logo-bracket">]</span>
+          <p class="footer-tagline">Redefining humanity, one upgrade at a time.</p>
+        </div>
+        <div class="footer-links-group">
+          <h4>NAVIGATION</h4>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#specs">Specs</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>LEGAL</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">EULA</a></li>
+            <li><a href="#">Bio-Ethics Charter</a></li>
+          </ul>
+        </div>
+        <div class="footer-links-group">
+          <h4>CONNECT</h4>
+          <div class="social-links">
+            <a href="#" class="social-link">TW</a>
+            <a href="#" class="social-link">GH</a>
+            <a href="#" class="social-link">DC</a>
+            <a href="#" class="social-link">YT</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 NEXUS-7 CORP. ALL RIGHTS RESERVED.</span>
+        <span class="footer-sys">SYS: ONLINE | VER: 7.4.2 | STATUS: <span class="status-dot"></span>NOMINAL</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
